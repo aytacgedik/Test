@@ -4,7 +4,7 @@ namespace NUnitTestProject1
 {
     public class CalculatorTest
     {
-        [Test]
+        [Test,Sequential]
         public void TestCalculator(
             [Values(0, 1, 1)] double x,
             [Values(0, 0, 1)] double y,
