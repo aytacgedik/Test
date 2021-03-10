@@ -7,7 +7,7 @@ namespace NUnitTestProject1
         [SetUp]
         public void Setup()
         {
-           
+            int a;
         }
 
         [Test]
