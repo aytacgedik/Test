@@ -6,12 +6,11 @@ namespace NUnitTestProject1
     {
         [Test,Sequential]
         public void TestCalculator(
-            [Values(0, 1, 1)] double x,
-            [Values(0, 0, 1)] double y,
-            [Values(0, 1, 2)] double expectedValue
+            [Values("", "1", "2","1,2")] string x,
+            [Values(0, 1, 2, 3)] int expectedValue
             )
         {
-            Assert.AreEqual(Calculator.Sum(x, y), expectedValue, 1e-4);
+            Assert.AreEqual(Calculator.Sum(x), expectedValue);
         }
     }
 }
